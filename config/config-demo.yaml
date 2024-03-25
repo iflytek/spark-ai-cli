@@ -1,3 +1,0 @@
-SPARK:
-  BASE: "wss://spark-api.xf-yun.com/v3.5/chat"
-  DOMAIN: "generalv3.5"
