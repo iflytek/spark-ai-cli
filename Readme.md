@@ -16,11 +16,6 @@
 
 感谢开源的力量，希望讯飞开源越做越好，星火大模型效果越来越好！。
 
-
-
-**本logo出自**
-
-
 ## 近期规划新特性
 
 - [ ] config模块接入
@@ -34,6 +29,7 @@
 ## 编译
 ```shell
 export GOPROXY=https://goproxy.cn
+go mod tidy
 go build -o sparkai
 
 ```
