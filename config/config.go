@@ -4,12 +4,20 @@ import (
 	"fmt"
 	"github.com/spf13/viper"
 	"os"
+	"os/user"
+	"path"
 	"sync"
 )
 
-var (
-	defaultConfigPath = "_config.yaml"
-)
+//var (
+//	defaultConfigPath = "_config.yaml"
+//)
+
+func createPath() (string, error) {
+	u, err := user.Current()
+	fmt.Println("Home dir:", u.HomeDir)
+	return u.HomeDir, err
+}
 
 func pathExists(path string) (bool, error) {
 	_, err := os.Stat(path)
@@ -24,7 +32,7 @@ func pathExists(path string) (bool, error) {
 
 func createFile(path string) error {
 	// 检查是否存在文件
-	exists, existsErr := pathExists(defaultConfigPath)
+	exists, existsErr := pathExists(path)
 	if exists {
 		return existsErr
 	}
@@ -60,6 +68,12 @@ func GetInstance() *config {
 
 // InitConfig init config
 func InitConfig() error {
+	// 生成家目录
+	defaultConfigPath, err := createPath()
+	if err != nil {
+		return err
+	}
+	defaultConfigPath = path.Join(defaultConfigPath, "spark_ai_cli_config.yaml")
 	// 创建配置文件
 	if err := createFile(defaultConfigPath); err != nil {
 		return err
@@ -71,11 +85,12 @@ func InitConfig() error {
 		return err
 	}
 
-	// todo 初始化基础配置
-	// todo viper.Set("mysql.url", "127.0.0.1")
+	// 初始化基础配置
+	viper.Set("SPARK.BASE", "wss://spark-api.xf-yun.com/v3.5/chat")
+	viper.Set("SPARK.DOMAIN", "generalv3.5")
 
 	instance = &config{}
-	// 写入
+
 	return nil
 }
 
@@ -83,6 +98,10 @@ func InitConfig() error {
 func Set(key, value string) {
 	_ = GetInstance()
 	viper.Set(key, value)
+	err := viper.WriteConfig()
+	if err != nil {
+		return
+	}
 }
 
 // Get config value with key
