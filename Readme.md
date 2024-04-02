@@ -30,11 +30,14 @@
 
 * 安装:
 
-linux和Mac
+**linux和Mac**
 
 ` bash -c "$(curl -s -L https://521github.com/iflytek/spark-ai-cli/releases/download/latest/install.sh)" `
 
-windows
+**windows**
+
+使用Windows PowerShell管理员权限执行如何脚本
+
 ```shell
 Invoke-Expression (Invoke-RestMethod 'https://521github.com/iflytek/spark-ai-cli/releases/download/latest/install.ps1')
 ```
