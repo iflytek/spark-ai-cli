@@ -24,6 +24,38 @@
 - [ ] 异常处理
 - [ ] 获取终端环境，进行个性化
 
+## 快速开始
+
+**一键安装**
+
+* 安装:
+
+` bash -c "$(curl -s -L https://521github.com/iflytek/spark-ai-cli/releases/download/latest/install.sh)" `
+
+* 升级最新stable版本:
+
+`aispark update`
+
+* 升级到最新dev版本
+
+`aispark update -d`
+
+* 查看当前版本:
+  `aispark version`
+
+```bash
+spark ai cli version: v0.0.4-2-g9db0add-development
+Git Commit Hash: 9db0add61b136f45daea37d284768952d3c092d4 
+Build TimeStamp: Sun, 31 Mar 2024 23:38:19 +0000 
+GoLang Version: 1.21 
+ _____ ______   ___  ______  _   __  ___   _____
+/  ___|| ___ \ / _ \ | ___ \| | / / / _ \ |_   _|
+\ `--. | |_/ // /_\ \| |_/ /| |/ / / /_\ \  | |
+ `--. \|  __/ |  _  ||    / |    \ |  _  |  | |
+/\__/ /| |    | | | || |\ \ | |\  \| | | | _| |_
+\____/ \_|    \_| |_/\_| \_|\_| \_/\_| |_/ \___/
+
+```
 
 
 ## 如何使用
