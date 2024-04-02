@@ -18,39 +18,47 @@
 
 ## 近期规划新特性
 
-- [ ] config模块接入
-- [ ] 执行结果优化
+- [x] config模块接入
+- [x] 执行结果优化
 - [ ] git bash适配
 - [ ] 异常处理
-- [ ] LLM类统一接口，快速切换业界大模型
 - [ ] 获取终端环境，进行个性化
 
 
-## 编译
-```shell
-export GOPROXY=https://goproxy.cn
-go mod tidy
-go build -o sparkai
-
-```
 
 ## 如何使用
-### 问问题
+### shell相关的问题
 ```shell
-sparkai xxxx
-sparkai nginx重启
+aispark awk如何截取字符
+aispark nginx重启
+#或者q
+aispark q nginx重启
+```
 
+### 知识问答问题
+```shell
+aispark c 今天天气怎么样
+```
+
+
+### mode切换
+```shell
+aispark -s awk如何截取字符  #安静模式
+aispark -l nginx重启      #可交互模式
+aispark -v nginx重启      #啰嗦模式，解释脚本内容
 ```
 
 ### 配置
 
+aispark现已开箱即用，默认的appid为公用，若想体验，可登录https://www.xfyun.cn/ 免费注册个人账户，独享个人账户，高效稳定
+
 ```shell
-sparkai config xxxx
-
+aispark config  # 交互式设置
+#以下功能后续开放
+aispark config key xxxx  
+aispark config secret xxxx  
+aispark config appid xxxx  
 ```
-
-### 示例代码
-
 
 ## 欢迎贡献
 
