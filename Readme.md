@@ -36,7 +36,7 @@
 
 **windows**
 
-使用Windows PowerShell管理员权限执行如何脚本
+使用Windows PowerShell管理员权限执行如下脚本
 
 ```shell
 Invoke-Expression (Invoke-RestMethod 'https://521github.com/iflytek/spark-ai-cli/releases/download/latest/install.ps1')
