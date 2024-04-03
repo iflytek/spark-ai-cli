@@ -3,6 +3,7 @@ param(
     [string]$reponame = "spark-ai-cli",
     [string]$toolname = "aispark",
     [string]$toolsymlink = "aispark",
+    [switch]$region = "cn"
     [switch]$help
 )
 
@@ -52,7 +53,11 @@ $API_URL = "https://api.github.com/repos/$repoowner/$reponame/releases/latest"
 $LATEST_TAG = (Invoke-RestMethod -Uri $API_URL).tag_name
 
 # Set the download URL based on the platform and latest release tag
-$DOWNLOAD_URL = "https://github.com/$repoowner/$reponame/releases/download/$LATEST_TAG/${toolname}-${OS}-${ARCH}.exe"
+if ($region -eq "cn"){
+    $DOWNLOAD_URL = "https://521github.com/$repoowner/$reponame/releases/download/$LATEST_TAG/${toolname}-${OS}-${ARCH}.exe"
+}else{
+    $DOWNLOAD_URL = "https://github.com/$repoowner/$reponame/releases/download/$LATEST_TAG/${toolname}-${OS}-${ARCH}.exe"
+}
 
 Write-Host $DOWNLOAD_URL
 
