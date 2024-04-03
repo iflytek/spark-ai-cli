@@ -32,7 +32,7 @@
 
 **linux和Mac**
 
-` bash -c "$(curl -s -L https://521github.com/iflytek/spark-ai-cli/releases/download/latest/install.sh)" `
+`sudo bash -c "$(curl -s -L https://521github.com/iflytek/spark-ai-cli/releases/download/latest/install.sh)" `
 
 **windows**
 
