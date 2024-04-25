@@ -20,8 +20,9 @@ if (-not (Test-Admin)) {
     $script = $MyInvocation.MyCommand.Definition
     $scriptPath = Split-Path -Parent $script
     Start-Process PowerShell -ArgumentList "-NoProfile -ExecutionPolicy Bypass -File `"$script`"" -Verb RunAs -WorkingDirectory $scriptPath#>
-    Write-Host "Please run as administrator"
-    Read-Host -Prompt "Press any key to exit..."
+    Write-Host "Please run as administrator" -ForegroundColor Red
+    Write-Host "Please run as administrator" -ForegroundColor Red
+    Write-Host "Please run as administrator" -ForegroundColor Red
     exit 1
 }
 
