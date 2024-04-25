@@ -15,11 +15,14 @@ function Test-Admin {
 }
 
 if (-not (Test-Admin)) {
-    Write-Host "Restarting script with administrator privileges..."
+    # uac在云端执行下不适用
+    <#    Write-Host "Restarting script with administrator privileges..."
     $script = $MyInvocation.MyCommand.Definition
     $scriptPath = Split-Path -Parent $script
-    Start-Process PowerShell -ArgumentList "-NoProfile -ExecutionPolicy Bypass -File `"$script`"" -Verb RunAs -WorkingDirectory $scriptPath
-    exit
+    Start-Process PowerShell -ArgumentList "-NoProfile -ExecutionPolicy Bypass -File `"$script`"" -Verb RunAs -WorkingDirectory $scriptPath#>
+    Write-Host "Please run as administrator"
+    Read-Host -Prompt "Press any key to exit..."
+    exit 1
 }
 
 if ($help) {
