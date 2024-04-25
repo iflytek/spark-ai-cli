@@ -20,9 +20,9 @@
 
 - [x] config模块接入
 - [x] 执行结果优化
-- [ ] git bash适配
-- [ ] 异常处理
-- [ ] 获取终端环境，进行个性化
+- [x] 获取终端环境，进行个性化
+- [ ] agents
+- [ ] plugins
 
 ## 快速开始
 
@@ -54,17 +54,20 @@ Invoke-Expression (Invoke-RestMethod 'https://521github.com/iflytek/spark-ai-cli
   `aispark version`
 
 ```bash
-spark ai cli version: v0.0.4-2-g9db0add-development
-Git Commit Hash: 9db0add61b136f45daea37d284768952d3c092d4 
-Build TimeStamp: Sun, 31 Mar 2024 23:38:19 +0000 
-GoLang Version: 1.21 
- _____ ______   ___  ______  _   __  ___   _____
-/  ___|| ___ \ / _ \ | ___ \| | / / / _ \ |_   _|
-\ `--. | |_/ // /_\ \| |_/ /| |/ / / /_\ \  | |
- `--. \|  __/ |  _  ||    / |    \ |  _  |  | |
-/\__/ /| |    | | | || |\ \ | |\  \| | | | _| |_
-\____/ \_|    \_| |_/\_| \_|\_| \_/\_| |_/ \___/
+aispark cli version: v0.0.20
+Git Commit Hash: 69ad2242e775d58299c62bd57477ccd2eab43ae6
+Build TimeStamp: Wed, 24 Apr 2024 11:39:26 +0000
+GoLang Version: 1.21
 
+     _     ___  ____   ____    _     ____   _  __
+    / \   |_ _|/ ___| |  _ \  / \   |  _ \ | |/ /
+   / _ \   | | \___ \ | |_) |/ _ \  | |_) || ' /
+  / ___ \  | |  ___) ||  __// ___ \ |  _ < | . \
+ /_/   \_\|___||____/ |_|  /_/   \_\|_| \_\|_|\_\
+
+
+讯飞云提供计算服务
+https://xinghuo.xfyun.cn/sparkapi
 ```
 
 
