@@ -88,9 +88,9 @@ aispark c 今天天气怎么样
 ### fuck模式
 支持平台：
 
--[x] windows powershell
--[x] macos bash
--[x] linux bash
+- [x] windows powershell
+- [x] macos bash
+- [x] linux bash
 
 
 
