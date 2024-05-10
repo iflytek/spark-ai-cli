@@ -1,8 +1,6 @@
 <h2 align="center">
 
-<picture>
   <img src="./docs/img/logo.png" />
-</picture>
 
 讯飞星火智能终端 (spark-ai-cli)
 </h2>
@@ -170,7 +168,7 @@ aispark config appid xxxx
 
 扫码加入交流群
 
-![用户交流群](./docs/img/wetchat.jpg)]
+![用户交流群](./docs/img/wetchat.jpg)
 
 ## 已知问题
 
