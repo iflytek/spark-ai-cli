@@ -23,6 +23,7 @@
 - [x] 获取终端环境，进行个性化
 - [ ] agents
 - [ ] plugins
+- [ ] 知识库
 
 ## 快速开始
 
@@ -46,9 +47,6 @@ Invoke-Expression (Invoke-RestMethod 'https://521github.com/iflytek/spark-ai-cli
 
 `aispark update`
 
-* 升级到最新dev版本
-
-`aispark update -d`
 
 * 查看当前版本:
   `aispark version`
@@ -69,9 +67,22 @@ GoLang Version: 1.21
 讯飞云提供计算服务
 https://xinghuo.xfyun.cn/sparkapi
 ```
+## 账号
+### 账号申请
+前往[讯飞开放平台](https://passport.xfyun.cn/register)免费注册
+### 账号登录
+```shell
+aispark login
+```
+
+### 账户注销
+```shell
+aispark logout
+```
 
 
 ## 如何使用
+
 ### shell相关的问题
 ```shell
 aispark awk如何截取字符
@@ -156,12 +167,12 @@ aispark config appid xxxx
 
 扫码加入交流群
 
+![用户交流群](./docs/img/wetchat.jpg "Shiprock")]
 
 ## 已知问题
 
-* 项目目前开发阶段，有一些冗余代码，人力有限，部分思想借鉴开源实现
+* 项目目前处于开发阶段，部分思想借鉴开源实现
 
-## URL
 
 ## 🌟 Star History
 
