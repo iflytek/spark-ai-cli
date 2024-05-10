@@ -14,7 +14,7 @@
 
 ## 前言
 
-感谢开源的力量，希望讯飞开源越做越好，星火大模型效果越来越好！。
+感谢开源的力量，希望讯飞开源越做越好，星火大模型效果越来越好！
 
 ## 近期规划新特性
 
@@ -45,11 +45,13 @@ Invoke-Expression (Invoke-RestMethod 'https://521github.com/iflytek/spark-ai-cli
 
 * 升级最新stable版本:
 
-`aispark update`
+```aispark update```
 
+升级需要管理员权限，powershell请使用**管理员身份**运行，linux和mac平台请使用**sudo**执行
 
 * 查看当前版本:
-  `aispark version`
+
+`aispark version`
 
 ```bash
 aispark cli version: v0.0.20
@@ -69,26 +71,25 @@ https://xinghuo.xfyun.cn/sparkapi
 ```
 ## 账号
 ### 账号申请
-前往[讯飞开放平台](https://passport.xfyun.cn/register)免费注册
+前往[讯飞开放平台](https://passport.xfyun.cn/register)**免费注册**账号
+
 ### 账号登录
+注册账号后，记住账户和密码，通过以下命令登录，登陆成功后即可使用
 ```shell
 aispark login
 ```
 
-### 账户注销
+### 退出登录
 ```shell
 aispark logout
 ```
-
 
 ## 如何使用
 
 ### shell相关的问题
 ```shell
-aispark awk如何截取字符
-aispark nginx重启
-#或者q
 aispark q nginx重启
+aispark q awk截取{{xxx}}中xxx的字符
 ```
 
 ### 知识问答问题
@@ -140,20 +141,22 @@ eval $(aispark fuck --alias)
 echo 'eval "$(aispark fuck --alias)"' >> ~/.bashrc
 ```
 
-更改仅在新的 shell 会话中可用。要立即进行更改，请运行 source ~/.bashrc （或 shell 配置文件，如 .zshrc ）。
+更改仅在新的 shell 会话中可用。若想立即生效，请运行 source ~/.bashrc （或 shell 配置文件，如 .zshrc ）。
 
 
 
 
 ### mode切换
 ```shell
-aispark -l nginx重启      #可交互模式
-aispark -v nginx重启      #啰嗦模式，解释脚本内容
+aispark -l q nginx重启      #可交互模式
+aispark -v q nginx重启      #啰嗦模式，解释脚本内容
 ```
 
 ### 配置
 
-aispark现已开箱即用，默认的appid为公用，若想体验，可登录https://www.xfyun.cn/ 免费注册个人账户，独享个人账户，高效稳定
+aispark现已开箱即用，登录讯飞开放平台账户即可使用；
+
+若您是开发者，登录[讯飞开放平台](https://www.xfyun.cn/?ch=xfy-sparkcli)免费注册开发者账户，进行如下配置，独享个人账户，高效稳定
 
 ```shell
 aispark config  # 交互式设置
@@ -167,7 +170,7 @@ aispark config appid xxxx
 
 扫码加入交流群
 
-![用户交流群](./docs/img/wetchat.jpg "Shiprock")]
+![用户交流群](./docs/img/wetchat.jpg)]
 
 ## 已知问题
 
@@ -178,4 +181,3 @@ aispark config appid xxxx
 
 [![Star History Chart](https://api.star-history.com/svg?repos=iflytek/spark-ai-cli&type=Date)](https://star-history.com/#iflytek/spark-ai-cli&Date)
 
-## 致谢
