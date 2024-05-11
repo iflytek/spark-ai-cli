@@ -31,7 +31,9 @@
 
 **linux和Mac**
 
-`sudo bash -c "$(curl -s -L https://521github.com/iflytek/spark-ai-cli/releases/download/latest/install.sh)" `
+```shell
+sudo bash -c "$(curl -s -L https://521github.com/iflytek/spark-ai-cli/releases/download/latest/install.sh)"
+```
 
 **windows**
 
@@ -69,7 +71,7 @@ https://xinghuo.xfyun.cn/sparkapi
 ```
 ## 账号
 ### 账号申请
-前往[讯飞开放平台](https://passport.xfyun.cn/register)**免费注册**账号
+前往[讯飞开放平台](https://passport.xfyun.cn/register?ch=xfy-sparkcli)**免费注册**账号
 
 ### 账号登录
 注册账号后，记住账户和密码，通过以下命令登录，登陆成功后即可使用
@@ -95,7 +97,7 @@ aispark q awk截取{{xxx}}中xxx的字符
 aispark c 今天天气怎么样
 ```
 
-### fuck模式
+### wow模式
 支持平台：
 
 - [x] windows powershell
@@ -106,8 +108,8 @@ aispark c 今天天气怎么样
 
 #### 使用方式
 ```shell
-aispark fuck
-aispark fuck aptget
+aispark wow
+aispark wow aptget
 ```
 
 #### 配置
@@ -116,7 +118,7 @@ aispark fuck aptget
 
 在windows下配置 Powershell $PROFILE，加入以下内容:
 ```powershell
-iex "$(aispark fuck --alias)"
+iex "$(aispark wow --alias)"
 ```
 
 这个文件是一个脚本文件，当 PowerShell 启动时自动执行里面的内容。如果你想知道你的 $PROFILE 文件的具体位置，可以在 PowerShell 窗口中运行以下命令：
@@ -132,11 +134,11 @@ echo $PROFILE
 将以下命令放在 .bash_profile，.bashrc,.zshrc 或其他启动脚本中：
 
 ```shell
-eval $(aispark fuck --alias)
+eval $(aispark wow --alias)
 ```
 例如：
 ```shell
-echo 'eval "$(aispark fuck --alias)"' >> ~/.bashrc
+echo 'eval "$(aispark wow --alias)"' >> ~/.bashrc
 ```
 
 更改仅在新的 shell 会话中可用。若想立即生效，请运行 source ~/.bashrc （或 shell 配置文件，如 .zshrc ）。
