@@ -170,7 +170,7 @@ aispark config appid xxxx
 
 扫码加入交流群
 
-![用户交流群](./docs/img/wetchat.jpg)
+![用户交流群](./docs/img/wechat.png)
 
 ## 已知问题
 
