@@ -28,14 +28,24 @@
 
 ## 快速开始
 
-**一键安装**
+**安装**
 
-* 安装:
-
-**linux和Mac**
+**linux和Mac shell脚本**
 
 ```shell
 sudo bash -c "$(curl -s -L https://521github.com/iflytek/spark-ai-cli/releases/download/latest/install.sh)"
+```
+
+**Mac brew安装**
+
+Mac已支持brew安装，如果您之前通过bash脚本安装过aispark，请先删除
+```shell
+rm -rf /usr/local/bin/aispark
+```
+brew安装命令：
+```shell
+brew tap iflytek/aispark
+brew install aispark
 ```
 
 **windows**
