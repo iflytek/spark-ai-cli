@@ -113,7 +113,7 @@ $LATEST_TAG = (Invoke-RestMethod -Uri $API_URL).tag_name
 
 # Set the download URL based on the platform and latest release tag
 if ($region -eq "cn"){
-    $DOWNLOAD_URL = "https://521github.com/$repoowner/$reponame/releases/download/$LATEST_TAG/${toolname}-${OS}-${ARCH}.exe.gz"
+    $DOWNLOAD_URL = "https://repo.model.xfyun.cn/api/packages/aispark/generic/aispark/$LATEST_TAG/${toolname}-${OS}-${ARCH}.exe.gz"
 }else{
     $DOWNLOAD_URL = "https://github.com/$repoowner/$reponame/releases/download/$LATEST_TAG/${toolname}-${OS}-${ARCH}.exe.gz"
 }
