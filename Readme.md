@@ -183,7 +183,7 @@ aispark config appid xxxx
 
 扫码加入交流群
 
-![用户交流群](./docs/img/wechat.png)
+![用户交流群](./docs/img/wechat.jpg)
 
 ## 已知问题
 
